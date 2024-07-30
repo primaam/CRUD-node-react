@@ -1,0 +1,28 @@
+.layout{
+    width: 100%;
+    max-width: 1440px;
+    height: 100vh;
+    padding-top: 100px;
+}
+
+.mainLayout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titleLayout{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.registerLayout{
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 80%;
+    min-height: 400px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
