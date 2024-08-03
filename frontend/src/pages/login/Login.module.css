@@ -1,0 +1,37 @@
+.layout{
+    width: 100%;
+    max-width: 1440px;
+    height: 100vh;
+    padding-top: 100px;
+}
+
+.mainLayout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titleLayout{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.loginLayout{
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 80%;
+    min-height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.formInput{
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: medium;
+    width: 500px;
+    min-height: 50px;
+    padding: 0 10px;
+    border-radius: 10px;
+}

@@ -58,20 +58,30 @@ const Login = () => {
     return (
         <div className={styles.layout}>
             <div className={styles.mainLayout}>
-                <div className={styles.registerLayout}>
+                <div className={styles.loginLayout}>
                     <div className={styles.titleLayout}>
                         <h1>Welcome to The Notes</h1>
-                        <h2>please sign up here</h2>
+                        <h2>please sign in here</h2>
                     </div>
-                    <form>
-                        <label>Username</label>
-                        <br />
-                        <input />
-                        <br />
-                        <br />
-                        <label>Password</label>
-                        <br />
-                        <input />
+                    <form onSubmit={handleLogin}>
+                        {formDetail.map((item, i) => {
+                            return (
+                                <div key={i}>
+                                    <label>{item.placeholder}</label>
+                                    <br />
+                                    <br />
+                                    <input
+                                        className={styles.formInput}
+                                        type={item.type}
+                                        placeholder={item.placeholder}
+                                        name={item.name}
+                                        value={item.value}
+                                        onChange={(e) => handleFormChange(e)}
+                                    />
+                                </div>
+                            );
+                        })}
+                        <button type="submit">{loading ? "Loading...." : "Submit"}</button>
                     </form>
                 </div>
             </div>
