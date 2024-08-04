@@ -1,5 +1,5 @@
 import express from "express";
-import { verifyToken } from "../middleware/verifyToken";
+import { verifyToken } from "../middleware/verifyToken.js";
 import {
     createNote,
     deleteNote,
@@ -7,7 +7,7 @@ import {
     getNotesPages,
     updateNote,
     getNotesCount,
-} from "../controllers/notesController";
+} from "../controllers/notesController.js";
 
 const router = express.Router();
 

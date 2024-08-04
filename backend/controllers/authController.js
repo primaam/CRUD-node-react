@@ -1,8 +1,10 @@
 import bcrypt from "bcryptjs";
-import { Pool } from "pg";
+import pkg from "pg";
 import jwt from "jsonwebtoken";
+import { v4 as uuidv4 } from "uuid";
 
-const { v4: uuidv4 } = require("uuid");
+// const { v4: uuidv4 } = require("uuid");
+const { Pool } = pkg;
 const SECRET_KEY = "test";
 
 const pool = new Pool({

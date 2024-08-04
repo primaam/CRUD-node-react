@@ -1,7 +1,8 @@
 import cors from "cors";
 import express from "express";
-import { router as authRoutes } from "./routes/authRoutes";
-import { router as notesRoutes } from "./routes/notesRoutes";
+import { router as authRoutes } from "./routes/authRoutes.js";
+import { router as notesRoutes } from "./routes/notesRoutes.js";
+import { verifyToken } from "./middleware/verifyToken.js";
 
 const app = express();
 
